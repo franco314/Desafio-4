@@ -1,0 +1,180 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "productos productos productos"
+      "productos productos productos"
+      "footer footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 120vh;
+    margin: 0;
+  }
+
+  .border {
+    border: 1px solid yellow;
+    background-color: 
+}
+
+header {
+    grid-area: header;  
+  }
+  
+  footer {
+    grid-area: footer;
+    }
+  
+  section#productos {
+    grid-area: productos;
+  }
+  
+  
+  
+  nav {
+    grid-area: nav;
+  }
+  
+  
+
+
+  header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #17b978;
+    }
+    
+    main{
+        background:#a7ff83 ;
+    }
+    
+    .logo img{
+    height: 100px;
+    width: 100px;
+    margin left: 10px;
+    }    
+    
+    .logo{
+    display: flex;
+    align-items: center;
+    }
+
+  
+        nav a{
+        text-decoration: none;
+        color: black;
+        padding-right: 100px;
+    }
+    
+    nav a:hover{
+        color: white;
+    }
+
+    .flex-container{
+      display: flex;
+      height: 830px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+
+
+  
+  .flex-container img{
+      width: 175px;
+      height: 235px;
+      align-items: flex-start;
+      margin: 20px;
+      transition: 1s;
+      }
+
+
+      .flex-container img:hover {
+      width: 225px;
+      height: 275px;
+      }
+  
+
+
+    footer{
+      height: 80px;
+      background-color: #086972;
+      }
+
+     
+   #productos {
+     background-color: #17b978;
+   }
+
+
+  .redes{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    float: left;
+    align-items: center
+    }
+    
+    .redes img{
+        height: 80px;
+        width: 80px;
+        margin top: 10px;
+        }
+    
+    #autores img{
+        height: 200px;
+        width: 300px;
+        }
+
+        #autores{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 350px;
+            grid-row-gap: 0px;
+            height: 1200px;
+            background-color:  #17b978;
+            }
+
+
+            #formulario{
+              position: top;
+            }
+    
+    .telefono{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-block;
+        float: right;
+    }
+    
+    
+    
+    .email{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: inline-block;
+        position: relative;
+        left: 550px;
+
+
+
+        @media screen and (min-width: 768px) {
+          .grid {
+              grid-template-columns: repeat(4, 1fr);
+          }
+          .border {
+              border: 4px solid black;
+              background-color: blue;
+          }
+      }
+      
+      @media screen and (min-width: 1024px) {
+            .grid {
+                  grid-template-columns: repeat(3, 1fr);
+            }
+            .border {
+            border: 4px solid black;
+            background-color: green;
+          }
