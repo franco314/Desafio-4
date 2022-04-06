@@ -46,6 +46,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #17b978;
+    background-image: linear-gradient(white, green);
     }
     
     main{
@@ -79,7 +80,9 @@ header {
       height: 830px;
       flex-direction: row;
       flex-wrap: wrap;
+      
     }
+
 
 
 
@@ -103,7 +106,9 @@ header {
     footer{
       height: 80px;
       background-color: #086972;
+      background-image: linear-gradient(white, green);
       }
+
 
      
    #productos {
